@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Css/bootstrap.css" />
+    <link rel="stylesheet" href="Css/style.css" />
+  </head>
+  <body class="container-md">
+    <header>
+      <h1>Below is my favourite Java script Calculator project so far.</h1>
+    </header>
+    <section id="projectCalculator">
+      <div id="description">
+        <h2>Simple Calculator</h2>
+        <img src="img/angle-down.png" id="img1" />
+      </div>
+      <div id="calcutator">
+        <div class="">
+          <input id="display" readonly />
+        </div>
+        <div id="buttons">
+          <div class="first-column">
+            <button onclick="addToDisplay('7')" class="col-3">7</button>
+            <button onclick="addToDisplay('8')" class="col-3">8</button>
+            <button onclick="addToDisplay('9')" class="col-3">9</button>
+            <button onclick="remove()" class="operators col-3">C</button>
+          </div>
+          <div class="second-column">
+            <button onclick="addToDisplay('4')" class="col-3">4</button>
+            <button onclick="addToDisplay('5')" class="col-3">5</button>
+            <button onclick="addToDisplay('6')" class="col-3">6</button>
+            <button onclick="addToDisplay('*')" class="operators col-3">
+              x
+            </button>
+          </div>
+          <div class="third-column">
+            <button onclick="addToDisplay('1')" class="col-3">1</button>
+            <button onclick="addToDisplay('2')" class="col-3">2</button>
+            <button onclick="addToDisplay('3')" class="col-3">3</button>
+
+            <button onclick="addToDisplay('/')" class="operators col-3">
+              /
+            </button>
+          </div>
+
+          <div class="fourth-column">
+            <button onclick="addToDisplay('0')" class="col-3">0</button>
+            <button onclick="addToDisplay('.')" class="col-3">.</button>
+            <button onclick="addToDisplay('+')" class="operators col-3">
+              +
+            </button>
+            <button onclick="addToDisplay('-')" class="operators col-3">
+              -
+            </button>
+          </div>
+          <div>
+            <button onclick="calcutator()" class="operators">=</button>
+          </div>
+        </div>
+        <br />
+        <br />
+      </div>
+    </section>
+
+    <script src="Js/jquery-3.7.1.js"></script>
+    <script src="Js/script.js"></script>
+  </body>
+</html>
